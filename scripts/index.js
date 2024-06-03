@@ -25,4 +25,4 @@ button.addEventListener("click", (e) => {
   if(mismatchText.style.visibility === "visible") {
     e.preventDefault();
   }
-})
+});
