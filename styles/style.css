@@ -1,3 +1,9 @@
+:root {
+  --light-gray: #e5e7eb;
+  --accent: green;
+  --red: red;
+}
+
 @font-face {
   font-family: "Norse Bold";
   src: url(../fonts/Norse-Bold.woff2) format("woff2");
