@@ -10,12 +10,15 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: "Source Sans 3", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
 }
 
 *, *::before, *::after {
@@ -26,11 +29,6 @@ body {
   margin: 0;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
 input, button, textarea, select {
   font: inherit;
 }
@@ -39,6 +37,44 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+.photo-panel {
+  flex: 1;
+  background: url(../images/balloons.jpg) no-repeat;
+  background-size: 800px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh;
+}
+
+.company-details {
+  background: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.odin-logo {
+  height: 100px;
+  width: 75px;
+}
+
 .odin-text {
   font-family: "Norse Bold", monospace;
+  font-size: 80px;
+  color: white;
+  display: inline;
+}
+
+.credit {
+  text-align: center;
+  margin-top: auto;
+  background: #00000080;
+  color: white;
+  a {
+    color: inherit;
+  }
+}
+
+.content-panel {
+  flex: 2;
 }
