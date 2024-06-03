@@ -22,7 +22,7 @@
     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
       <br>Sign up <em>now</em> to get started.</p>
     <p>You <em>know</em> you want to.</p>
-    <form action="/server" method="get">
+    <form action="" method="get">
       <section class="form-section">
         <h1>Let's do this!</h1>
         <article class="form-control">
@@ -49,8 +49,12 @@
           <label for="cpass">Confirm password</label>
           <input id="cpass" name="cpass" type="password" required minlength="8" maxlength="100">
         </article>
+        <div class="infobox">
+          <p class="info-text mismatch-text">*Passwords do not match</p>
+          <p class="info-text">*All fields are mandatory</p>
+        </div>
       </section>
-      <button type="submit">Create Account</button>
+      <button id="submit-form" type="submit">Create Account</button>
     </form>
     <small>Already have an account? <a href="#">Log in</a></small>
   </div>

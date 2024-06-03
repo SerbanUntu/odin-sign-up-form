@@ -47,7 +47,7 @@ input {
   padding: 4px 8px;
 }
 
-input:invalid {
+input:user-invalid, .invalid {
   border-color: var(--red);
 }
 
@@ -119,14 +119,20 @@ button {
 
 .content-panel {
   flex: 2;
+  min-height: fit-content;
+  padding-top: 10vh;
   background-color: var(--light-gray-bg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   overflow: auto;
 
   p, h1, .form-control, button, small {
     margin: 16px 32px;
+  }
+
+  h1 {
+    display: block;
+    width: 100%;
   }
 
   p {
@@ -142,12 +148,8 @@ button {
   }
 }
 
-h1 {
-  display: block;
-  width: 100%;
-}
-
 .form-section {
+  position: relative;
   background: white;
   display: flex;
   flex-wrap: wrap;
@@ -156,8 +158,27 @@ h1 {
   box-shadow: 0px 5px 10px 2px #00000040;
 }
 
+.infobox {
+  position: absolute;
+  bottom: 4px;
+  left: 32px;
+}
+
+.info-text {
+  font-size: 0.8rem;
+  margin: 0 !important;
+}
+
+.mismatch-text {
+  color: var(--red);
+}
+
 @media screen and (max-width: 750px) {
   body {
     flex-direction: column;
+  }
+
+  .content-panel {
+    padding-top: 0;
   }
 }
